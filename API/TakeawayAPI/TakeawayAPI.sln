@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34202.233
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TakeawayAPI", "TakeawayAPI.csproj", "{C437A959-BC6F-4129-878A-463948650722}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C437A959-BC6F-4129-878A-463948650722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C437A959-BC6F-4129-878A-463948650722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C437A959-BC6F-4129-878A-463948650722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C437A959-BC6F-4129-878A-463948650722}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6ED5B7AB-D21D-428B-B0A7-64CE2C93CA96}
+	EndGlobalSection
+EndGlobal

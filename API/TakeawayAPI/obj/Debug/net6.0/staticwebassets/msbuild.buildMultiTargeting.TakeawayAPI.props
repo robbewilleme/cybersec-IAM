@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\TakeawayAPI.props" />
+</Project>

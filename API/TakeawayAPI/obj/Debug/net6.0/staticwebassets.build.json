@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "SmjLc4ypA6slnebhYmGwaSLYrUfUvRvm4DDz81+2IBU=",
+  "Source": "TakeawayAPI",
+  "BasePath": "_content/TakeawayAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
