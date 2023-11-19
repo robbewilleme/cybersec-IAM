@@ -30,3 +30,10 @@ C:\Users\robbe\Documents\AP\Cyber security advanced\cybersec-IAM\API\TakeawayAPI
 C:\Users\robbe\Documents\AP\Cyber security advanced\cybersec-IAM\API\TakeawayAPI\obj\Debug\net6.0\TakeawayAPI.pdb
 C:\Users\robbe\Documents\AP\Cyber security advanced\cybersec-IAM\API\TakeawayAPI\obj\Debug\net6.0\TakeawayAPI.genruntimeconfig.cache
 C:\Users\robbe\Documents\AP\Cyber security advanced\cybersec-IAM\API\TakeawayAPI\obj\Debug\net6.0\ref\TakeawayAPI.dll
+C:\Users\robbe\Documents\AP\Cyber security advanced\cybersec-IAM\API\TakeawayAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\robbe\Documents\AP\Cyber security advanced\cybersec-IAM\API\TakeawayAPI\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\robbe\Documents\AP\Cyber security advanced\cybersec-IAM\API\TakeawayAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\robbe\Documents\AP\Cyber security advanced\cybersec-IAM\API\TakeawayAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\robbe\Documents\AP\Cyber security advanced\cybersec-IAM\API\TakeawayAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\robbe\Documents\AP\Cyber security advanced\cybersec-IAM\API\TakeawayAPI\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\robbe\Documents\AP\Cyber security advanced\cybersec-IAM\API\TakeawayAPI\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll

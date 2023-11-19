@@ -1,0 +1,24 @@
+<h1>Takeaway app</h1>
+<router-outlet></router-outlet>
+<!-- <div>
+  <button (click)="login()">Login</button>
+</div>
+<div>
+  <p>Welkom {{ userName }}</p>
+  <button (click)="logout()">Logout</button>
+</div> -->
+
+<div *ngIf="!isLoggedIn;">
+  <button (click)="login()">Login</button>
+</div>
+<div *ngIf="isLoggedIn;">
+  <p>Welkom, {{ userName }}</p>
+  <!-- <p>Welcome, {{ birthdate }}</p> -->
+
+  <button (click)="logout()">Order Burger</button>
+  <button (click)="logout()">Order Pizza</button>
+
+  
+  <br><br>
+  <button (click)="logout()">Logout</button>
+</div>
