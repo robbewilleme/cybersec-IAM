@@ -29,7 +29,11 @@ export class AuthService {
   }
 
   login() {
-    return this.userManager.signinRedirect();
+    return this.userManager.signinRedirect({
+      extraQueryParams: {
+        audience: 'https://cybersecopdracht3.be',
+      },
+    });
   }
 
   completeLogin() {

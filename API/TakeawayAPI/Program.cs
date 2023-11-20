@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using TakeawayAPI;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -25,7 +26,14 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     });
 
 // Add authorization policies
-builder.Services.AddAuthorization();
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("read:orders", policy =>
+    {
+        policy.RequireAuthenticatedUser();
+        // Add any other requirements as needed
+    });
+});
 
 var app = builder.Build();
 
@@ -36,8 +44,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseAuthentication(); // Add this line
-app.UseAuthorization(); // Add this line
+app.UseCors(policy => policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+
+app.UseAuthentication();
+app.UseAuthorization();
+
+app.UseAccessTokenValidation();
 
 app.MapControllers();
 

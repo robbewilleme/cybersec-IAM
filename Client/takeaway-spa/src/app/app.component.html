@@ -15,10 +15,16 @@
   <p>Welkom, {{ userName }}</p>
   <!-- <p>Welcome, {{ birthdate }}</p> -->
 
-  <button (click)="logout()">Order Burger</button>
-  <button (click)="logout()">Order Pizza</button>
+  <button (click)="viewMenu()">Bekijk menukaart</button>
+  <div *ngIf="apiData.length > 0">
+    <h2>Menukaart</h2>
+    <ul>
+      <li *ngFor="let order of apiData">
+        {{ order.name }} - Price: {{ order.price }} - {{ order.description }}
+      </li>
+    </ul>
+  </div>
 
-  
   <br><br>
   <button (click)="logout()">Logout</button>
 </div>

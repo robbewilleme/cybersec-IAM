@@ -8,7 +8,7 @@ namespace TakeawayAPI.Controllers
     [Route("api/[controller]")]
     public class TakeawayController : ControllerBase
     {
-        [Authorize]
+        [Authorize("read:orders")]
         [HttpGet("orders")]
         public ActionResult<IEnumerable<Order>> GetOrders()
         {

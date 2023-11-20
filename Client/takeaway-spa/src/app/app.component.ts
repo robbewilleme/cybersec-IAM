@@ -1,5 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from './auth.service';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+
+
+interface Order {
+  id: number;
+  name: string;
+  price: number;
+  description: string;
+}
+
 
 @Component({
   selector: 'app-root',
@@ -12,12 +22,13 @@ export class AppComponent implements OnInit {
   userName: string;
   isLoggedIn: boolean;
   birthdate: string;
-
-  constructor(private authService: AuthService) {
+  apiData: Order[];
+  constructor(private authService: AuthService, private http: HttpClient) {
     this.userName = '';
     this.isLoggedIn = false;
     this.checkLoginStatus();
     this.birthdate = '';
+    this.apiData = [];
   }
 
   ngOnInit() {
@@ -53,4 +64,21 @@ export class AppComponent implements OnInit {
     this.authService.logout();
     this.checkLoginStatus(); // Update login status after logout
   }
+
+  viewMenu(){
+    this.authService.getAccessToken().then((accestoken) => {
+      console.log('Access Token:', accestoken);
+      const headers = new HttpHeaders().set('Authorization', `Bearer ${accestoken}`);
+      this.http.get<Order[]>("http://localhost:5293/api/takeaway/orders", {headers}).subscribe(
+        (response) =>{
+          console.log(response);
+          this.apiData = response;
+        },
+        (error) => {
+          console.log(error);
+        }
+      )
+    });
+  }
+
 }
