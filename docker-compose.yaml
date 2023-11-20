@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  angular-app:
+    build:
+      context: ./Client/takeaway-spa
+    ports:
+      - "4200:4200"
+    depends_on:
+      - api
+
+  api:
+    build:
+      context: ./API
+    ports:
+      - "5293:80"
